@@ -1,5 +1,5 @@
 <?php
-    include "connection.php";
+    include "action/connection.php";
     $query = mysqli_query($link,"SELECT * FROM awakkapal");
 ?>
 <!DOCTYPE html>
@@ -29,47 +29,7 @@
         </div>
         <!-- /Preloader -->
 
-        <!-- Header Area Start -->
-        <header class="header-area">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Classy Menu -->
-                    <nav class="classy-navbar justify-content-between" id="conferNav">
-
-                        <!-- Logo -->
-                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu">
-                            <!-- Menu Close Button -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul id="nav">
-                                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#">Awak Kapal</a></li>
-                                    <li><a href="#">Kapal</a></li>
-                                    <li><a href="#">Awak Hilang</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                </ul>
-
-                                <!-- Get Tickets Button -->
-                                <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Login</i></a>
-                            </div>
-                            <!-- Nav End -->
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <!-- Header Area End -->
+        <?php include "nav.php";?>
 
         <!-- Our Speakings Area Start -->
         <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg);">
@@ -148,9 +108,7 @@
                         <!-- Copywrite Text -->
                         <div class="col-12 col-md-12">
                             <div class="copywrite-text">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by nelayanondataTeam
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Nelayan On DATA Team</p>
                             </div>
                         </div>
                 </div>
