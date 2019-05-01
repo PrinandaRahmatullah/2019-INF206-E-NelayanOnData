@@ -1,3 +1,13 @@
+<?php
+    // session_start();
+
+    // if(!isset($_SESSION["username"])){
+    //   header("Location: index.php");
+    // }
+  
+    require_once "action/connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +24,7 @@
     <link rel="icon" href="./img/core-img/favicon.png">
 
     <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -25,47 +36,8 @@
     </div>
     <!-- /Preloader -->
 
-    <!-- Header Area Start -->
-    <header class="header-area">
-        <div class="classy-nav-container breakpoint-off">
-            <div class="container">
-                <!-- Classy Menu -->
-                <nav class="classy-navbar justify-content-between" id="conferNav">
+    <?php include "nav.php";?>
 
-                    <!-- Logo -->
-                    <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-                        <!-- Menu Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul id="nav">
-                                <li class="active"><a href="index.html">Home</a></li>
-				                <li><a href="awak.php">Awak Kapal</a></li>
-                                <li><a href="#">Kapal</a></li>
-                                <li><a href="#">Awak Hilang</a></li>
-                                <li><a href="#">About Us</a></li>
-                            </ul>
-
-                            <!-- Login Button -->
-                            <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Login</i></a>
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!-- Header Area End -->
 
   <!-- Welcome Area Start -->
     <section class="welcome-area">
@@ -99,11 +71,11 @@
                                 <h2 data-animation="fadeInUp" data-delay="300ms">Kapal dan Nelayan</h2>
                                 <!-- Event Meta -->
                                 <div class="event-meta" data-animation="fadeInUp" data-delay="500ms">
-                                    <a class="event-date" href="#"><i class="zmdi zmdi-account"></i> April 25, 2019</a>
+                                    <p class="tulisan event-date"> <i class="zmdi zmdi-account"></i><script>var bulan =["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+                                    document.write("   " + new Date().getHours() +" : " + new Date().getMinutes() + " ");document.write(", " + new Date().getDate() + " "); document.write(" " + bulan[new Date().getMonth()] + " "); document.write(new Date().getFullYear());</script></p>
                                 </div>
                                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="#" class="btn confer-btn m-2">Sign Up<i class="zmdi zmdi-long-arrow-right"></i></a>
-                                    <a href="#" class="btn confer-btn m-2">Login<i class="zmdi zmdi-long-arrow-right"></i></a>
+                                    <a href="login.php" class="btn confer-btn m-2">Login<i class="zmdi zmdi-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +88,6 @@
 
 <!-- Footer Area Start -->
     <footer class="footer-area bg-img bg-overlay-2">
-
         <!-- Copywrite Area -->
         <div class="container">
             <div class="copywrite-content">
@@ -124,9 +95,7 @@
                     <!-- Copywrite Text -->
                     <div class="col-12 col-md-12">
                         <div class="copywrite-text">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Nelayan On DATA Team</p>
                         </div>
                     </div>
                 </div>
