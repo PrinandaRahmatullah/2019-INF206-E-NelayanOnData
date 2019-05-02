@@ -100,7 +100,7 @@ $link = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
         <div class="container">
         
         <table class="data-table col-12">
-        <caption class="title">Data kapal</caption>
+        <caption class="title"></caption>
         <thead>
             <tr>
                 <th>NO</th>
