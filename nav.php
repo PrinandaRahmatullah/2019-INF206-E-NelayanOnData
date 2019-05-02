@@ -24,7 +24,7 @@
                                 <ul id="nav">
                                     <li><a href="index.php">Home</a></li>
                                     <li><a href="awak.php">Awak Kapal</a></li>
-                                    <li><a href="#">Kapal</a></li>
+                                    <li><a href="kapal.php">Kapal</a></li>
                                     <li><a href="#">Awak Hilang</a></li>
                                     <li><a href="#">About Us</a></li>
                                 </ul>
