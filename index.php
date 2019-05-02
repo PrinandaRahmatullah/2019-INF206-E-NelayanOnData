@@ -41,9 +41,9 @@
 
   <!-- Welcome Area Start -->
     <section class="welcome-area">
-        <div class="welcome-slides owl-carousel">
+        <div class="welcome-slides owl-carousel" style="height:100vh;width:100vw;">
             <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/1.jpg);">
+            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/1.jpg); width:100vw">
                 <div class="container h-100">
                     <div class="row h-75 align-items-center">
                         <!-- Welcome Text -->
@@ -61,7 +61,7 @@
             </div>
 
             <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/2.jpg);">
+            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/2.jpg); width:100vw">
                 <div class="container h-100">
                     <div class="row h-75 align-items-center">
                         <!-- Welcome Text -->
@@ -70,9 +70,10 @@
                                 <h5 data-animation="fadeInUp" data-delay="100ms">keberangkatan & kepulangan</h5>
                                 <h2 data-animation="fadeInUp" data-delay="300ms">Kapal dan Nelayan</h2>
                                 <!-- Event Meta -->
-                                <div class="event-meta" data-animation="fadeInUp" data-delay="500ms">
-                                    <p class="tulisan event-date"> <i class="zmdi zmdi-account"></i><script>var bulan =["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-                                    document.write("   " + new Date().getHours() +" : " + new Date().getMinutes() + " ");document.write(", " + new Date().getDate() + " "); document.write(" " + bulan[new Date().getMonth()] + " "); document.write(new Date().getFullYear());</script></p>
+                                <div class="event-meta" data-animation="fadeInUp" data-delay="100ms">
+                                    <p id="waktu" class="tulisan event-date">
+                                        
+                                    </p>
                                 </div>
                                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
                                     <a href="login.php" class="btn confer-btn m-2">Login<i class="zmdi zmdi-long-arrow-right"></i></a>
@@ -86,23 +87,7 @@
     </section>
     <!-- Welcome Area End -->
 
-<!-- Footer Area Start -->
-    <footer class="footer-area bg-img bg-overlay-2">
-        <!-- Copywrite Area -->
-        <div class="container">
-            <div class="copywrite-content">
-                <div class="row">
-                    <!-- Copywrite Text -->
-                    <div class="col-12 col-md-12">
-                        <div class="copywrite-text">
-                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Nelayan On DATA Team</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Area End -->
+    <?php include "footer.php"; ?>
 
 
     <!-- **** All JS Files ***** -->
@@ -114,7 +99,11 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- All Plugins -->
     <script src="js/confer.bundle.js"></script>
+    <!-- Time Display -->
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+    <!-- Own Javascript -->
+    <script src="js/main.js"></script>
 </body>
 </html>

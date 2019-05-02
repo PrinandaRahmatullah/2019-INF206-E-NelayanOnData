@@ -32,7 +32,7 @@
         <?php include "nav.php";?>
 
         <!-- Our Speakings Area Start -->
-        <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg);">
+        <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg); height:100vh;">
             <div class="container">
                 <div class="row">
                     <!-- Heading -->
@@ -80,7 +80,7 @@
                                     <td>".$data['Nama']."</td>
                                     <td>".$data['Tanggal_Lahir']."</td>
                                     <td>".$data['Bulan_Lahir']."</td>
-                                    <td>".$data['Tahun_lahir']."</td>
+                                    <td>".$data['Tahun_Lahir']."</td>
                                     <td>".$data['Kota']."</td>
                                     <td>".$data['Kecamatan']."</td>
                                     <td>".$data['Desa']."</td>
@@ -99,22 +99,7 @@
         </section>
         <!-- Our Speakings Area End -->
 
-        <!-- Footer Area Start -->
-        <footer class="footer-area bg-img bg-overlay-2">
-
-            <!-- Copywrite Area -->
-            <div class="container">
-                <div class="copywrite-content">
-                        <!-- Copywrite Text -->
-                        <div class="col-12 col-md-12">
-                            <div class="copywrite-text">
-                                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Nelayan On DATA Team</p>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer Area End -->
+        <?php include "footer.php"; ?>
 
         <!-- **** All JS Files ***** -->
         <!-- jQuery 2.2.4 -->

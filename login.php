@@ -33,7 +33,7 @@
 
 
     <!-- Our Blog Area Start -->
-    <section class="latbelk our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/17.jpg);">
+    <section class="latbelk our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/17.jpg); height:100vh">
         <div class="container">
             <center>
             <div class="pembatas">
@@ -85,24 +85,8 @@
     </section>
     <!-- Our Blog Area End -->
 
-    <!-- Footer Area Start -->
-    <footer class="footer-area bg-img bg-overlay-2">
+    <?php include "footer.php"; ?>
 
-        <!-- Copywrite Area -->
-        <div class="container">
-            <div class="copywrite-content">
-                <div class="row">
-                    <!-- Copywrite Text -->
-                    <div class="col-12 col-md-12">
-                        <div class="copywrite-text">
-                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Nelayan On DATA Team</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Area End -->
 
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->

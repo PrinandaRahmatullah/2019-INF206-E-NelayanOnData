@@ -36,6 +36,7 @@
                                     <?php echo $_SESSION["nama"]; ?>
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Pelaporan</a>
                                         <a class="dropdown-item" href="#">Account Setting</a>
                                         <a class="dropdown-item" href="logout.php"><strong>Log Out</strong></a>
                                     </div>
