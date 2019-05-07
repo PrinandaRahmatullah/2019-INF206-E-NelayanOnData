@@ -15,7 +15,7 @@ $(document).ready(function(){
         setTimeout(function(){
             $('.owl-prev').click();
             prevSlide();
-        }, 4000);
+        }, 6000);
     }
 
 });

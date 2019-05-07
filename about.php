@@ -188,7 +188,7 @@
             <div class="container">
                 <div class="row">
                     <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="single-footer-widget mb-60">
                             <!-- Footer Logo -->
                             <a href="#" class="footer-logo"><img src="img/core-img/logo.png" alt=""></a>
@@ -205,7 +205,7 @@
                     </div>
 
                     <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="single-footer-widget mb-60">
                             <!-- Widget Title -->
                             <h5 class="widget-title">Contact</h5>
@@ -222,7 +222,7 @@
 
                     
                     <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="single-footer-widget mb-60">
                             <!-- Widget Title -->
                             <h5 class="widget-title">Gallery</h5>
