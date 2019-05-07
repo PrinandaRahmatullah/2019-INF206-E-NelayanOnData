@@ -1023,12 +1023,12 @@ input:required {
   position: relative;
   z-index: 1; }
   .main-footer-area .single-footer-widget .widget-title {
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
     margin-bottom: 20px; }
   .main-footer-area .single-footer-widget p {
     color: #9293bc;
-    font-size: 14px; }
+    font-size: 20px; }
     .main-footer-area .single-footer-widget p i {
       margin-right: 5px; }
   .main-footer-area .single-footer-widget .footer-logo {
