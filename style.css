@@ -33,6 +33,7 @@ Last Update: March 14, 2019
     20.0 Contact Area CSS
     21.0 CTA Area CSS
 --------------------------------------------- */
+
 /* Import Fonts & All CSS */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
 @import url(css/bootstrap.min.css);
@@ -45,7 +46,7 @@ Last Update: March 14, 2019
 @import url(css/style.css);
 /* :: 01.0 Reboot Area CSS */
 * {
-  margin: 0;
+  margin: 2px;
   padding: 0; }
 
 body {
@@ -327,8 +328,8 @@ input:required {
   padding-bottom: 50px; }
 
 .section-padding-100 {
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 52px;
+  padding-bottom: 0px; }
 
 .section-padding-0-85 {
   padding-top: 0;
@@ -347,8 +348,13 @@ input:required {
   padding-bottom: 100px; }
 
 .section-padding-100-0 {
-  padding-top: 100px;
-  padding-bottom: 0; }
+  padding-top: 200px;
+  padding-bottom: 25px; }
+
+/* .section-padding-100-10 {
+  padding-top : 200px;
+  padding-bottom : 0;
+} */
 
 /* :: 3.0 Preloader Area CSS */
 #preloader {
@@ -1017,12 +1023,12 @@ input:required {
   position: relative;
   z-index: 1; }
   .main-footer-area .single-footer-widget .widget-title {
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
     margin-bottom: 20px; }
   .main-footer-area .single-footer-widget p {
     color: #9293bc;
-    font-size: 14px; }
+    font-size: 20px; }
     .main-footer-area .single-footer-widget p i {
       margin-right: 5px; }
   .main-footer-area .single-footer-widget .footer-logo {
