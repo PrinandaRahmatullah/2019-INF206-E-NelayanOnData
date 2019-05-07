@@ -45,9 +45,6 @@ Last Update: March 14, 2019
 @import url(css/material-design-iconic-font.min.css);
 @import url(css/style.css);
 /* :: 01.0 Reboot Area CSS */
-* {
-  margin: 2px;
-  padding: 0; }
 
 body {
   font-family: "Poppins", sans-serif;
@@ -1023,12 +1020,12 @@ input:required {
   position: relative;
   z-index: 1; }
   .main-footer-area .single-footer-widget .widget-title {
-    font-size: 25px;
+    font-size: 24px;
     color: #ffffff;
     margin-bottom: 20px; }
   .main-footer-area .single-footer-widget p {
     color: #9293bc;
-    font-size: 20px; }
+    font-size: 17px; }
     .main-footer-area .single-footer-widget p i {
       margin-right: 5px; }
   .main-footer-area .single-footer-widget .footer-logo {
