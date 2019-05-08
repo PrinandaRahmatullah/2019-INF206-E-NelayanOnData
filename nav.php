@@ -25,7 +25,7 @@
                                     <li><a href="index.php">Home</a></li>
                                     <li><a href="awak.php">Awak Kapal</a></li>
                                     <li><a href="kapal.php">Kapal</a></li>
-                                    <li><a href="#">Awak Hilang</a></li>
+                                    <li><a href="awakhilang.php">Awak Hilang</a></li>
                                     <li><a href="about.php">About Us</a></li>
                                 </ul>
 
@@ -54,3 +54,4 @@
             </div>
         </header>
         <!-- Header Area End -->
+

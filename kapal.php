@@ -1,6 +1,6 @@
 <?php
     include "action/connection.php";
-    $query = mysqli_query($link,"SELECT * FROM data_kapal");
+    $query = mysqli_query($link,"SELECT * FROM kapal");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Title -->
-        <title>Awak Kapal</title>
+        <title>Kapal</title>
 
         <!-- Favicon -->
         <link rel="icon" href="./img/core-img/favicon.png">
@@ -32,7 +32,8 @@
         <?php include "nav.php";?>
 
         <!-- Our Speakings Area Start -->
-        <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image:img/bg-img/4.jpg; height:100vh;">
+        <section class="latbelk our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/2.jpg); height:100vh">
+
             <div class="container">
                 <div class="row">
                     <!-- Heading -->
@@ -51,10 +52,11 @@
                         <table class="table table-stripped wow fadeInUp" data-wow-delay="300ms">
                             <thead>
                                 <tr>
-                                    <td>Nama kapal</td>
-                                    <td>Besar muatan</td>
-                                    <td>Nahkoda</td>
-                                    <td>Kondisi</td>
+                                    <td><center>No</center></td>
+                                    <td><center>Nama Kapal</center></td>
+                                    <td><center>Ukuran (GT)</center></td></td>
+                                    <td><center>Nahkoda</center></td>
+                                    <td><center>Status</center></td>
                                     
                                 </tr>
 
@@ -68,12 +70,12 @@
                                      while ($data = mysqli_fetch_array($query)) { $tambah++;
                                         echo"
 
-                                    <td>".$tambah."</td>
+                                    <td><center>".$tambah."</center></td>
 
-                                    <td>".$data['Nama_kapal']."</td>
-                                    <td>".$data['Besar_muatan']."</td>
-                                    <td>".$data['Nahkoda']."</td>
-                                    <td>".$data['Kondisi']."</td>
+                                    <td><center>".$data['Nama_Kapal']."</center></td>
+                                    <td><center>".$data['Ukuran']."</center></td>
+                                    <td><center>".$data['Nahkoda']."</center></td>
+                                    <td><center>".$data['Status']."</center></td>
                                 </tr>";
                                  } 
                                  } ?>
@@ -101,5 +103,5 @@
         <!-- Active -->
         <script src="js/default-assets/active.js"></script>
 </body>
-
 </html>
+
