@@ -178,11 +178,6 @@
     </section>       
     <!-- Our Sponsor And Client Area Start -->
     <section class="our-sponsor-client-area section-padding-100">
-        <style>
-        * {
-  margin: 0px;
-  padding: 1px; }
-  </style>
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">
