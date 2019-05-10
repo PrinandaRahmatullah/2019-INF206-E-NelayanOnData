@@ -32,7 +32,11 @@
         <?php include "nav.php";?>
 
         <!-- Our Speakings Area Start -->
+<<<<<<< HEAD
+         <section class="our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/10.jpg); height:100vh">
+=======
          <section class="latbelk our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/10.jpg); height:100vh">
+>>>>>>> master
             <div class="container">
                 <div class="row">
                     <!-- Heading -->
