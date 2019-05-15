@@ -1,6 +1,8 @@
 <?php
+    // Menghubungkan ke database
     include "action/connection.php";
-    $query = mysqli_query($link,"SELECT * FROM kapal");
+    // Mengambil semua data yang ada di data_kapal
+    $query = mysqli_query($link,"SELECT * FROM data_kapal");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,12 +30,11 @@
             <div class="loader"></div>
         </div>
         <!-- /Preloader -->
-
+        <!-- Memanggil nav.php dengan tujuan menampilkan navbar yang sudah di buat sebelumnya -->
         <?php include "nav.php";?>
 
         <!-- Our Speakings Area Start -->
         <section class="our-blog-area bg-img section-padding-100-60" style="background-image: url(img/bg-img/18.jpg); height:100vh">
-
             <div class="container">
                 <div class="row">
                     <!-- Heading -->
@@ -47,16 +48,15 @@
 
                 <div class="row">
                     
-                    <!-- Single Speaker Area -->
+                     <!-- Tabel untuk menampilkan semua data data kapal -->
                     <div class="col-12 col-lg-12">
                         <table class="table table-stripped wow fadeInUp" data-wow-delay="300ms">
                             <thead>
                                 <tr>
-                                    <td><center>No</center></td>
-                                    <td><center>Nama Kapal</center></td>
-                                    <td><center>Ukuran (GT)</center></td></td>
-                                    <td><center>Nahkoda</center></td>
-                                    <td><center>Status</center></td>
+                                    <td>Nama kapal</td>
+                                    <td>Besar muatan</td>
+                                    <td>Nahkoda</td>
+                                    <td>Kondisi</td>
                                     
                                 </tr>
 
@@ -70,12 +70,12 @@
                                      while ($data = mysqli_fetch_array($query)) { $tambah++;
                                         echo"
 
-                                    <td><center>".$tambah."</center></td>
+                                    <td>".$tambah."</td>
 
-                                    <td><center>".$data['Nama_Kapal']."</center></td>
-                                    <td><center>".$data['Ukuran']."</center></td>
-                                    <td><center>".$data['Nahkoda']."</center></td>
-                                    <td><center>".$data['Status']."</center></td>
+                                    <td>".$data['Nama_kapal']."</td>
+                                    <td>".$data['Besar_muatan']."</td>
+                                    <td>".$data['Nahkoda']."</td>
+                                    <td>".$data['Kondisi']."</td>
                                 </tr>";
                                  } 
                                  } ?>
@@ -88,7 +88,7 @@
             </div>
         </section>
         <!-- Our Speakings Area End -->
-
+        <!-- Memanggil footer.php dengan tujuan menampilkan footer atau bagian bawah yang sudah di buat sebelumnya -->
         <?php include "footer.php"; ?>
 
         <!-- **** All JS Files ***** -->
@@ -103,5 +103,5 @@
         <!-- Active -->
         <script src="js/default-assets/active.js"></script>
 </body>
-</html>
 
+</html>
