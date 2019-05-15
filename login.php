@@ -33,7 +33,7 @@
 
 
     <!-- Our Blog Area Start -->
-    <section class="latbelk our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/17.jpg); height:100vh">
+    <section class="latbelk our-blog-area bg-img  section-padding-100-60" style="background-image: url(img/bg-img/17.jpg); height:100vh">
         <div class="container">
             <center>
             <div class="pembatas">
@@ -58,14 +58,14 @@
                                             <!-- Form Group -->
                                             <div class="col-12 col-lg-12">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control mb-30" name="nik" id="nik" placeholder="NIK. Cth : 1106202810990003">
+                                                    <input type="text" class="form-control mb-30" name="nik" id="nik" placeholder="Enter NIK" required>
                                                 </div>
                                             </div>
                                         
                                             <!-- Form Group -->
                                             <div class="col-12 col-lg-12">
                                                 <div class="form-group">
-                                                    <input type="password" class="form-control mb-30" name="password" id="subject" placeholder="Password">
+                                                    <input type="password" class="form-control mb-30" name="password" id="subject" placeholder="Enter Password" required>
                                                 </div>
                                             </div>
                                             <!-- Button -->
