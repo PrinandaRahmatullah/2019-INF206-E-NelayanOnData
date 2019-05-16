@@ -1,5 +1,8 @@
 <?php
+
+    // Menghubungkan ke database
     include "action/connection.php";
+    // Mengambil semua data yang ada di awakkapal
     $query = mysqli_query($link,"SELECT * FROM awakkapal");
 ?>
 <!DOCTYPE html>
@@ -29,10 +32,11 @@
         </div>
         <!-- /Preloader -->
 
+        <!-- Memanggil nav.php dengan tujuan menampilkan navbar yang sudah di buat sebelumnya -->
         <?php include "nav.php";?>
 
         <!-- Our Speakings Area Start -->
-        <section class="latbelk our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg); height:100vh">
+        <section class="our-blog-area bg-img section-padding-100-60" style="background-image: url(img/bg-img/19.jpg); height:100vh">
             <div class="container">
                 <div class="row">
                     <!-- Heading -->
@@ -46,7 +50,7 @@
 
                 <div class="row">
                     
-                    <!-- Single Speaker Area -->
+                    <!-- Tabel untuk menampilkan semua data awak kapal -->
                     <div class="col-12 col-lg-12">
                         <table class="table table-stripped wow fadeInUp" data-wow-delay="300ms">
                             <thead>
@@ -98,7 +102,7 @@
             </div>
         </section>
         <!-- Our Speakings Area End -->
-
+        <!-- Memanggil footer.php dengan tujuan menampilkan footer atau bagian bawah yang sudah di buat sebelumnya -->
         <?php include "footer.php"; ?>
 
         <!-- **** All JS Files ***** -->
@@ -113,5 +117,5 @@
         <!-- Active -->
         <script src="js/default-assets/active.js"></script>
 </body>
-</html>
 
+</html>
