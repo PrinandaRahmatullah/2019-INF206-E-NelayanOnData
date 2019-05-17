@@ -33,7 +33,7 @@
 
         <!-- Our Speakings Area Start -->
          <section class="our-blog-area bg-img section-padding-100-60" style="background-image: url(img/bg-img/10.jpg); height:100vh">
-            <div class="container">
+            <div class="container back">
                 <div class="row">
                     <!-- Heading -->
                     <div class="col-12">
@@ -44,11 +44,11 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row isi">
                     
                     <!-- Single Speaker Area -->
                     <div class="col-12 col-lg-12">
-                        <table class="table table-stripped wow fadeInUp" data-wow-delay="300ms">
+                        <table class="table table-dark table-hover wow fadeInUp" data-wow-delay="300ms">
                             <thead>
                                 <tr>
                                     <td>No.</td>
