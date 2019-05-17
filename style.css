@@ -410,7 +410,7 @@ input:required {
 .section-heading {
   position: relative;
   z-index: 1;
-  margin-bottom: 60px; }
+  margin-bottom: 45px; }
   .section-heading p {
     color: #ffffff;
     letter-spacing: 1px;
@@ -420,7 +420,7 @@ input:required {
     font-weight: 400; }
   .section-heading h4 {
     font-size: 38px;
-    color: #ffffff;
+    color: black;
     margin-bottom: 0;
     text-transform: uppercase;
     letter-spacing: 1px; }
@@ -2234,7 +2234,7 @@ input:required {
   .single-client-content .client-icon {
     background: #df42b1;
     background: -moz-linear-gradient(120deg, #df42b1 0%, #505add 100%);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     opacity: 0.7;
     position: absolute;
@@ -2807,6 +2807,34 @@ a.akun:focus{
   width: 100%;
 }
 
+.back{
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+}
+
+.isi{
+  overflow: auto;
+  height: 375px;
+}
+table{
+  border-radius: 20px;
+  text-align: center;
+}
+table thead{
+  position: sticky;
+  top: 0px;
+  background-color: black;
+  border-radius: 20px;
+
+}
+table tbody{
+  max-width: 100%;
+}
+#tabimp thead th, #tabimp tbody td{
+  vertical-align: middle;
+}
+
 @media only screen and (max-width: 990px){
   a.akun{
     color: black;
@@ -2826,3 +2854,4 @@ a.akun:focus{
     background-color: black;
   }
 }
+

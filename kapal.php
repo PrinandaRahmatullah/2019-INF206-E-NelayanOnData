@@ -2,7 +2,7 @@
     // Menghubungkan ke database
     include "action/connection.php";
     // Mengambil semua data yang ada di data_kapal
-    $query = mysqli_query($link,"SELECT * FROM data_kapal");
+    $query = mysqli_query($link,"SELECT * FROM data_kapal order by Nama_kapal asc");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +35,7 @@
 
         <!-- Our Speakings Area Start -->
         <section class="our-blog-area bg-img section-padding-100-60" style="background-image: url(img/bg-img/18.jpg); height:100vh">
-            <div class="container">
+            <div class="container back">
                 <div class="row">
                     <!-- Heading -->
                     <div class="col-12">
@@ -46,13 +46,14 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row isi">
                     
                      <!-- Tabel untuk menampilkan semua data data kapal -->
                     <div class="col-12 col-lg-12">
-                        <table class="table table-stripped wow fadeInUp" data-wow-delay="300ms">
+                        <table class="table table-dark table-hover wow fadeInUp" data-wow-delay="300ms">
                             <thead>
                                 <tr>
+                                    <td>No</td>
                                     <td>Nama kapal</td>
                                     <td>Besar muatan</td>
                                     <td>Nahkoda</td>
@@ -77,8 +78,8 @@
                                     <td>".$data['Nahkoda']."</td>
                                     <td>".$data['Kondisi']."</td>
                                 </tr>";
-                                 } 
-                                 } ?>
+                                    } 
+                                    } ?>
                             </tbody>
 
                         </table>
