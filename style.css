@@ -2677,10 +2677,10 @@ input:required {
   margin-bottom: 30px; }
 
 .contact_input_area .form-group .form-control {
-  border-bottom: 1px solid #dbdcf1;
+  border-bottom: 1px solid rgb(167, 167, 167);
   color: black; }
   .contact_input_area .form-group .form-control:active, .contact_input_area .form-group .form-control:focus {
-    border-bottom-color: #5d5e8d; }
+    border-bottom-color: #6d6fff; }
 .contact_input_area .form-group textarea.form-control {
   height: 70px; }
 
@@ -2767,7 +2767,9 @@ div.pembatas{
   height: 330px;
   padding-top: 2%;
   padding-bottom: 1%;
-  border-radius: 8%;
+  border-radius: 5% 15%;
+  box-shadow: 5px 10px lightslategrey;
+
 }
 
 section.latbelk{
@@ -2782,22 +2784,45 @@ p.tulisan{
 }
 
 a.akun{
-  border-radius: 10px;
-  background-color: grey;
   color: white;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 a.akun:hover{
   color: black;
-  background-color: white
+  background-color: white;
+  width: 100%;
 }
 
 a.akun:active{
   color: white;
   background-color: black;
+  width: 100%;
 }
 
 a.akun:focus{
   color: black;
   background-color: white;
+  width: 100%;
+}
+
+@media only screen and (max-width: 990px){
+  a.akun{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  a.akun:hover{
+    color: white;
+    background-color: black;
+  }
+  a.akun:active{
+    color: black;
+    background-color: white;
+  }
+  a.akun:focus{
+    color: white;
+    background-color: black;
+  }
 }

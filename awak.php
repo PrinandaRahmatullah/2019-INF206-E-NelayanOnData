@@ -36,7 +36,7 @@
         <?php include "nav.php";?>
 
         <!-- Our Speakings Area Start -->
-        <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg); height:100vh;">
+        <section class="our-blog-area bg-img section-padding-100-60" style="background-image: url(img/bg-img/19.jpg); height:100vh">
             <div class="container">
                 <div class="row">
                     <!-- Heading -->
