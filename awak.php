@@ -58,9 +58,8 @@
                                         <th>No.</th>
                                         <th>NIK</th>
                                         <th>Nama</th>
-                                        <th>Tgl Lahir</th>
-                                        <th>Bln Lahir</th>
-                                        <th>Thn Lahir</th>
+                                        <th>Tempat Lahir</th>
+                                        <th>Tanggal Lahir</th>
                                         <th>Kota</th>
                                         <th>Kecamatan</th>
                                         <th>Desa</th>
@@ -75,23 +74,22 @@
 
                                         <?php if (mysqli_num_rows($query)>0){ 
                                             $tambah = 0;
-                                         while ($data = mysqli_fetch_array($query)) { $tambah++;
+                                            while ($data = mysqli_fetch_array($query)) { $tambah++;
                                             echo"
 
-                                        <td>".$tambah."</td>
+                                            <td>".$tambah."</td>
 
-                                        <td>".$data['NIK']."</td>
-                                        <td>".$data['Nama']."</td>
-                                        <td>".$data['Tanggal_Lahir']."</td>
-                                        <td>".$data['Bulan_Lahir']."</td>
-                                        <td>".$data['Tahun_Lahir']."</td>
-                                        <td>".$data['Kota']."</td>
-                                        <td>".$data['Kecamatan']."</td>
-                                        <td>".$data['Desa']."</td>
-                                        <td>".$data['No_HP']."</td>
-                                        <td>".$data['No_HP_Darurat']."</td>
-                                    </tr>";
-                                     } 
+                                            <td>".$data['NIK']."</td>
+                                            <td>".$data['Nama']."</td>
+                                            <td>".$data['Tempat_Lahir']."</td>
+                                            <td>".$data['Tanggal_Lahir']."</td>
+                                            <td>".$data['Kota']."</td>
+                                            <td>".$data['Kecamatan']."</td>
+                                            <td>".$data['Desa']."</td>
+                                            <td>".$data['No_HP']."</td>
+                                            <td>".$data['No_HP_Darurat']."</td>
+                                        </tr>";
+                                        } 
                                      } ?>
                                 </tbody>
 

@@ -54,12 +54,13 @@
                                     <td>No.</td>
                                     <td>NIK</td>
                                     <td>Nama</td>
-                                    <td>Tgl Lahir</td>
-                                    <td>Bln Lahir</td>
-                                    <td>Thn Lahir</td>
+                                    <td>Tempat Lahir</td>
+                                    <td>Tanggal Lahir</td>
                                     <td>Kota</td>
                                     <td>Kecamatan</td>
                                     <td>Desa</td>
+                                    <td>Waktu Hilang</td>
+                                    <td>Kapal</td>
                                 </tr>
 
                             </thead>
@@ -75,12 +76,14 @@
 
                                     <td>".$data['NIK']."</td>
                                     <td>".$data['Nama']."</td>
+                                    <td>".$data['Tempat_Lahir']."</td>
                                     <td>".$data['Tanggal_Lahir']."</td>
-                                    <td>".$data['Bulan_Lahir']."</td>
-                                    <td>".$data['Tahun_Lahir']."</td>
                                     <td>".$data['Kota']."</td>
                                     <td>".$data['Kecamatan']."</td>
                                     <td>".$data['Desa']."</td>
+                                    <td>".$data['Waktu_Hilang']."</td>
+                                    <td>".$data['Nama_Kapal']."</td>
+
                                 </tr>";
                                  } 
                                  } ?>

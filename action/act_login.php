@@ -12,10 +12,13 @@ require_once "connection.php";
     if($query->num_rows > 0){
         session_start();
         $_SESSION["nik"]=$nik;
+        $_SESSION["password"]=$password;
         $_SESSION["nama"]=$hasil['nama'];
+        // echo $_SESSION["password"];
         header("Location: ../index.php");
     }
     else{
         echo "<script>alert('NIK atau Password Salah!');location.replace('../login.php');</script>";
     }
+    
 ?>
