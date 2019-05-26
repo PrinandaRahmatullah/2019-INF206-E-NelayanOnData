@@ -1,41 +1,40 @@
 <?php
-    require_once "action/connection.php";
+    require_once "../action/connection.php";
 ?>
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Title -->
-    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--=== FontAwesome CSS ===-->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
 
-    <!-- Favicon -->
-    <link rel="icon" href="./img/core-img/favicon.png">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
+    <title>Admin</title>
+  </head>
+  <body>
+    <div id="overlie">
+      <h4 style="color:white">Access to System</h4>
+      <img src="../img/core-img/logo 2.png" alt="" width="85%">
     </div>
-    <!-- /Preloader -->
-
-    <?php include "nav.php";?>
-
-
-    <!-- Our Blog Area Start -->
-    <section class="latbelk our-blog-area bg-img  section-padding-100-60" style="background-image: url(img/bg-img/17.jpg); height:100vh">
+    <!--== Login Page Content Start ==-->
+    <section id="lgoin-page-wrap " class="section-padding">
         <div class="container">
-            <center>
+          <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-8" style="margin-top:-100px;margin-bottom:30px;">
+              <img src="../img/core-img/admin.png" alt="" width="100%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-7">
             <div class="pembatas">
                 <div class="row">
                     <!-- Heading -->
@@ -45,7 +44,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row justify-content-between">
                     <div id="tengahin" class="col-12 col-sm-8">
                         <!-- Contact Form -->
@@ -61,8 +59,7 @@
                                             </div>
                                             <div class="col-md-10">
                                                 <div class="form-group">
-                                                    
-                                                    <input type="text" class="form-control mb-30" name="nik" id="nik" placeholder="Enter NIK" required>
+                                                    <input type="text" class="form-control mb-30" name="nik" id="nik" placeholder="Enter NIK" required autofocus>
                                                 </div>
                                             </div>
                                         
@@ -72,7 +69,6 @@
                                             </div>
                                             <div class="col-md-10">
                                                 <div class="form-group">
-
                                                     <input type="password" class="form-control mb-30" name="password" id="subject" placeholder="Enter Password" required>
                                                 </div>
                                             </div>
@@ -88,26 +84,16 @@
                     </div>
                 </div>
             </div>
+            </div>
+          </div>
         </div>
-        </center>
     </section>
-    <!-- Our Blog Area End -->
-
-    <?php include "footer.php"; ?>
-
-
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="js/confer.bundle.js"></script>
-    <!-- Active -->
-    <script src="js/default-assets/active.js"></script>
-
-</body>
-
+    <!--== Login Page Content End ==-->
+    <?php include "footer.php" ?>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>

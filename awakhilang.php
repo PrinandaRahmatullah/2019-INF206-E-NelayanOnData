@@ -33,7 +33,7 @@
 
         <!-- Our Speakings Area Start -->
          <section class="our-blog-area bg-img section-padding-100-60" style="background-image: url(img/bg-img/10.jpg); height:100vh">
-            <div class="container">
+            <div class="container back">
                 <div class="row">
                     <!-- Heading -->
                     <div class="col-12">
@@ -44,22 +44,23 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row isi">
                     
                     <!-- Single Speaker Area -->
                     <div class="col-12 col-lg-12">
-                        <table class="table table-stripped wow fadeInUp" data-wow-delay="300ms">
+                        <table class="table table-dark table-hover wow fadeInUp" data-wow-delay="300ms">
                             <thead>
                                 <tr>
                                     <td>No.</td>
                                     <td>NIK</td>
                                     <td>Nama</td>
-                                    <td>Tgl Lahir</td>
-                                    <td>Bln Lahir</td>
-                                    <td>Thn Lahir</td>
+                                    <td>Tempat Lahir</td>
+                                    <td>Tanggal Lahir</td>
                                     <td>Kota</td>
                                     <td>Kecamatan</td>
                                     <td>Desa</td>
+                                    <td>Waktu Hilang</td>
+                                    <td>Kapal</td>
                                 </tr>
 
                             </thead>
@@ -75,12 +76,14 @@
 
                                     <td>".$data['NIK']."</td>
                                     <td>".$data['Nama']."</td>
+                                    <td>".$data['Tempat_Lahir']."</td>
                                     <td>".$data['Tanggal_Lahir']."</td>
-                                    <td>".$data['Bulan_Lahir']."</td>
-                                    <td>".$data['Tahun_Lahir']."</td>
                                     <td>".$data['Kota']."</td>
                                     <td>".$data['Kecamatan']."</td>
                                     <td>".$data['Desa']."</td>
+                                    <td>".$data['Waktu_Hilang']."</td>
+                                    <td>".$data['Nama_Kapal']."</td>
+
                                 </tr>";
                                  } 
                                  } ?>

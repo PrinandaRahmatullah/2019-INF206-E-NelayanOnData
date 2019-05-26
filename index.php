@@ -94,7 +94,7 @@
     <!-- All Plugins -->
     <script src="js/confer.bundle.js"></script>
     <!-- Time Display -->
-    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="js/moment.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
     <!-- Own Javascript -->
