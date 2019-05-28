@@ -7,7 +7,6 @@ require_once "../../action/connection.php";
     $pass_md5 = md5($password);
 
     $query = $link->query ("SELECT * FROM admin WHERE nik='$nik_md5' and password='$pass_md5'");
-    echo $nik.$password;
 
     if($query->num_rows>0){
         session_start();
