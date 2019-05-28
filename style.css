@@ -2836,6 +2836,104 @@ table tbody{
   vertical-align: middle;
 }
 
+.wadah{
+  margin: 110px auto;
+  margin-bottom: 200px; 
+  height: 825px;
+  width: 100%;
+  position: absolute;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.wadah-edit{
+  height: 825px;
+}
+.col-kiri{
+  margin-right: 10px; 
+  margin-bottom: 10px;
+  padding: 40px;
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.2);
+  box-sizing: border-box;
+}
+.col-kiri-edit{
+  margin-right: 10px;
+}
+.col-kiri img{
+  object-fit: contain;
+  height: 300px;
+}
+.col-kiri-bawah{
+  height: 0px;
+  visibility: hidden;
+}
+
+.tombol{
+  margin-top: 5px; 
+  text-align: right;
+}
+.col-kanan{
+  margin-right: 5px; 
+  margin-bottom: 10px;
+  padding: 16px 40px 40px 40px;
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.2);
+  box-sizing: border-box;
+  height: 490px;
+}
+.col-kanan-edit{
+  height: 700px;
+}
+.col-kanan-bawah{
+  height: 190px;
+}
+.col-kiri input, .col-kanan input, .col-kanan-edit input{
+  margin-bottom: 7px;
+}
+.card{
+	box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+#formulir input{
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  visibility: visible;
+  background-color: transparent;
+
+}
+#formulir input:active, input:focus{
+  outline: none;
+}
+
+.sub-dropdown {
+  display: flex;
+  flex-direction: column;
+  padding-left: 34px;
+  border-bottom: 1px solid #ccc; 
+}
+
+.sub-dropdown a {
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1250px){
+  .wadah{
+    margin: 10% auto;
+    height: 600px;
+  }
+  .wadah-edit{
+    height: 725px;
+  }
+}
+
+@media only screen and (max-width: 1010px){
+  .wadah{
+    margin: 11% auto;
+  }
+}
+
 @media only screen and (max-width: 990px){
   a.akun{
     color: black;
@@ -2853,6 +2951,78 @@ table tbody{
   a.akun:focus{
     color: white;
     background-color: black;
+  }
+  .wadah{
+    margin: 12% auto;
+  }
+}
+
+@media only screen and (max-width: 870px){
+  .wadah{
+    margin-top: 13% ;
+  }
+  .col-kiri{
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .wadah{
+    margin-top: 14% ;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .wadah{
+    margin-top: 16% ;
+    height: 1150px;
+  }
+  .wadah-edit{
+    height: 1200px;
+  }
+  .col-kiri, .col-kanan{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .col-kiri{
+    height: 820px;
+  }
+  .col-kanan{
+    padding: 16px 40px 40px 40px;
+  }
+  .col-kiri-edit{
+    height: 1075px;
+  }
+}
+
+@media only screen and (max-width: 620px){
+  .wadah{
+    margin-top: 20% ;
+  }
+}
+
+@media only screen and (max-width: 520px){
+  .wadah{
+    margin-top: 25% ;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  .wadah{
+    margin-top: 30% ;
+  }
+}
+@media only screen and (max-width: 350px){
+  .wadah{
+    margin-top: 37%;
+  }
+}
+@media only screen and (max-width: 290px){
+  .wadah{
+    margin-top: 45%;
+  }
+  .wadah-edit{
+    height: 1500px;
   }
 }
 

@@ -66,11 +66,15 @@
                                 <!-- Event Meta -->
                                 <div class="event-meta" data-animation="fadeInUp" data-delay="100ms">
                                     <p id="waktu" class="tulisan event-date">
-                                        
                                     </p>
                                 </div>
                                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="login.php" class="btn confer-btn m-2">Login<i class="zmdi zmdi-long-arrow-right"></i></a>
+                                <?php if (isset($_SESSION["nik"]) && $_SESSION["password"]): ?>
+                                <a href="#" class="btn confer-btn">Lapor Now<i class="zmdi zmdi-long-arrow-right"></i></a>                                
+                                <?php else: ?>
+                                <!-- Get Tickets Button -->
+                                <a href="login.php" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Login</i></a>
+                                <?php endif; ?>
                                 </div>
                             </div>
                         </div>

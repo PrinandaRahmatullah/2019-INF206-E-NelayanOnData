@@ -38,6 +38,11 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="#">Pelaporan</a>
+                                        <div class="dropdown-item sub-dropdown">
+                                            <a href="">Lapor Melaut</a>
+                                            <a href="">Lapor Kembali</a>
+                                            <a href="laporawakhilang.php">Lapor Orang Hilang</a>
+                                        </div>
                                         <a class="dropdown-item" href="acset.php">Account Setting</a>
                                         <a class="dropdown-item" href="logout.php"><strong>Log Out</strong></a>
                                     </div>
