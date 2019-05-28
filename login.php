@@ -33,7 +33,7 @@
 
 
     <!-- Our Blog Area Start -->
-    <section class="latbelk our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/17.jpg); height:100vh">
+    <section class="latbelk our-blog-area bg-img  section-padding-100-60" style="background-image: url(img/bg-img/17.jpg); height:100vh">
         <div class="container">
             <center>
             <div class="pembatas">
@@ -49,23 +49,31 @@
                 <div class="row justify-content-between">
                     <div id="tengahin" class="col-12 col-sm-8">
                         <!-- Contact Form -->
-                        <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+                        <div class="contact_from_area clearfix wow fadeInUp" data-wow-delay="300ms">
                             <div class="contact_form">
                                 <form action="action/act_login.php" method="post" id="main_contact_form">
                                     <div class="contact_input_area">
                                         <div id="success_fail_info"></div>
                                         <div class="row">
                                             <!-- Form Group -->
-                                            <div class="col-12 col-lg-12">
+                                            <div class="col-md-2">
+                                                <i style="font-size:24px" class="fa">&#xf007;</i>
+                                            </div>
+                                            <div class="col-md-10">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control mb-30" name="nik" id="nik" placeholder="NIK. Cth : 1106202810990003">
+                                                    
+                                                    <input type="text" class="form-control mb-30" name="nik" id="nik" placeholder="Enter NIK" required>
                                                 </div>
                                             </div>
                                         
                                             <!-- Form Group -->
-                                            <div class="col-12 col-lg-12">
+                                            <div class="col-md-2">
+                                            <i class="fa fa-key"></i>
+                                            </div>
+                                            <div class="col-md-10">
                                                 <div class="form-group">
-                                                    <input type="password" class="form-control mb-30" name="password" id="subject" placeholder="Password">
+
+                                                    <input type="password" class="form-control mb-30" name="password" id="subject" placeholder="Enter Password" required>
                                                 </div>
                                             </div>
                                             <!-- Button -->
