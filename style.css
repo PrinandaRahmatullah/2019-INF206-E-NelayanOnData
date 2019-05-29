@@ -33,6 +33,7 @@ Last Update: March 14, 2019
     20.0 Contact Area CSS
     21.0 CTA Area CSS
 --------------------------------------------- */
+
 /* Import Fonts & All CSS */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
 @import url(css/bootstrap.min.css);
@@ -44,9 +45,6 @@ Last Update: March 14, 2019
 @import url(css/material-design-iconic-font.min.css);
 @import url(css/style.css);
 /* :: 01.0 Reboot Area CSS */
-* {
-  margin: 0;
-  padding: 0; }
 
 body {
   font-family: "Poppins", sans-serif;
@@ -327,8 +325,8 @@ input:required {
   padding-bottom: 50px; }
 
 .section-padding-100 {
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 52px;
+  padding-bottom: 0px; }
 
 .section-padding-0-85 {
   padding-top: 0;
@@ -347,8 +345,13 @@ input:required {
   padding-bottom: 100px; }
 
 .section-padding-100-0 {
-  padding-top: 100px;
-  padding-bottom: 0; }
+  padding-top: 200px;
+  padding-bottom: 25px; }
+
+/* .section-padding-100-10 {
+  padding-top : 200px;
+  padding-bottom : 0;
+} */
 
 /* :: 3.0 Preloader Area CSS */
 #preloader {
@@ -407,7 +410,7 @@ input:required {
 .section-heading {
   position: relative;
   z-index: 1;
-  margin-bottom: 60px; }
+  margin-bottom: 45px; }
   .section-heading p {
     color: #ffffff;
     letter-spacing: 1px;
@@ -417,7 +420,7 @@ input:required {
     font-weight: 400; }
   .section-heading h4 {
     font-size: 38px;
-    color: #ffffff;
+    color: black;
     margin-bottom: 0;
     text-transform: uppercase;
     letter-spacing: 1px; }
@@ -431,7 +434,8 @@ input:required {
 .section-heading-2 {
   position: relative;
   z-index: 1;
-  margin-bottom: 60px; }
+  margin-top: 10px;
+  margin-bottom: 40px; }
   .section-heading-2 p {
     color: #df42b1;
     letter-spacing: 1px;
@@ -1017,12 +1021,12 @@ input:required {
   position: relative;
   z-index: 1; }
   .main-footer-area .single-footer-widget .widget-title {
-    font-size: 20px;
+    font-size: 24px;
     color: #ffffff;
     margin-bottom: 20px; }
   .main-footer-area .single-footer-widget p {
     color: #9293bc;
-    font-size: 14px; }
+    font-size: 17px; }
     .main-footer-area .single-footer-widget p i {
       margin-right: 5px; }
   .main-footer-area .single-footer-widget .footer-logo {
@@ -2231,7 +2235,7 @@ input:required {
   .single-client-content .client-icon {
     background: #df42b1;
     background: -moz-linear-gradient(120deg, #df42b1 0%, #505add 100%);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     opacity: 0.7;
     position: absolute;
@@ -2674,10 +2678,10 @@ input:required {
   margin-bottom: 30px; }
 
 .contact_input_area .form-group .form-control {
-  border-bottom: 1px solid #dbdcf1;
+  /* border-bottom: 2px solid rgb(167, 167, 167); */
   color: black; }
   .contact_input_area .form-group .form-control:active, .contact_input_area .form-group .form-control:focus {
-    border-bottom-color: #5d5e8d; }
+    border-bottom: 2px solid red; }
 .contact_input_area .form-group textarea.form-control {
   height: 70px; }
 
@@ -2764,7 +2768,9 @@ div.pembatas{
   height: 330px;
   padding-top: 2%;
   padding-bottom: 1%;
-  border-radius: 8%;
+  border-radius: 5% 20%;
+  box-shadow: 0 15px 15px 2px rgba(0, 0, 0, 0.2);
+
 }
 
 section.latbelk{
@@ -2779,22 +2785,244 @@ p.tulisan{
 }
 
 a.akun{
-  border-radius: 10px;
-  background-color: grey;
   color: white;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 a.akun:hover{
   color: black;
-  background-color: white
+  background-color: white;
+  width: 100%;
 }
 
 a.akun:active{
   color: white;
   background-color: black;
+  width: 100%;
 }
 
 a.akun:focus{
   color: black;
   background-color: white;
+  width: 100%;
 }
+
+.back{
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+}
+
+.isi{
+  overflow: auto;
+  height: 375px;
+}
+table{
+  border-radius: 20px;
+  text-align: center;
+}
+table thead{
+  position: sticky;
+  top: 0px;
+  background-color: black;
+  border-radius: 20px;
+
+}
+table tbody{
+  max-width: 100%;
+}
+#tabimp thead th, #tabimp tbody td{
+  vertical-align: middle;
+}
+
+.wadah{
+  margin: 110px auto;
+  margin-bottom: 200px; 
+  height: 825px;
+  width: 100%;
+  position: absolute;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.wadah-edit{
+  height: 825px;
+}
+.col-kiri{
+  margin-right: 10px; 
+  margin-bottom: 10px;
+  padding: 40px;
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.2);
+  box-sizing: border-box;
+}
+.col-kiri-edit{
+  margin-right: 10px;
+}
+.col-kiri img{
+  object-fit: contain;
+  height: 300px;
+}
+.col-kiri-bawah{
+  height: 0px;
+  visibility: hidden;
+}
+
+.tombol{
+  margin-top: 5px; 
+  text-align: right;
+}
+.col-kanan{
+  margin-right: 5px; 
+  margin-bottom: 10px;
+  padding: 16px 40px 40px 40px;
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.2);
+  box-sizing: border-box;
+  height: 490px;
+}
+.col-kanan-edit{
+  height: 700px;
+}
+.col-kanan-bawah{
+  height: 190px;
+}
+.col-kiri input, .col-kanan input, .col-kanan-edit input{
+  margin-bottom: 7px;
+}
+.card{
+	box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+#formulir input{
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  visibility: visible;
+  background-color: transparent;
+
+}
+#formulir input:active, input:focus{
+  outline: none;
+}
+
+.sub-dropdown {
+  display: flex;
+  flex-direction: column;
+  padding-left: 34px;
+  border-bottom: 1px solid #ccc; 
+}
+
+.sub-dropdown a {
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1250px){
+  .wadah{
+    margin: 10% auto;
+    height: 600px;
+  }
+  .wadah-edit{
+    height: 725px;
+  }
+}
+
+@media only screen and (max-width: 1010px){
+  .wadah{
+    margin: 11% auto;
+  }
+}
+
+@media only screen and (max-width: 990px){
+  a.akun{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  a.akun:hover{
+    color: white;
+    background-color: black;
+  }
+  a.akun:active{
+    color: black;
+    background-color: white;
+  }
+  a.akun:focus{
+    color: white;
+    background-color: black;
+  }
+  .wadah{
+    margin: 12% auto;
+  }
+}
+
+@media only screen and (max-width: 870px){
+  .wadah{
+    margin-top: 13% ;
+  }
+  .col-kiri{
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .wadah{
+    margin-top: 14% ;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .wadah{
+    margin-top: 16% ;
+    height: 1150px;
+  }
+  .wadah-edit{
+    height: 1200px;
+  }
+  .col-kiri, .col-kanan{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .col-kiri{
+    height: 820px;
+  }
+  .col-kanan{
+    padding: 16px 40px 40px 40px;
+  }
+  .col-kiri-edit{
+    height: 1075px;
+  }
+}
+
+@media only screen and (max-width: 620px){
+  .wadah{
+    margin-top: 20% ;
+  }
+}
+
+@media only screen and (max-width: 520px){
+  .wadah{
+    margin-top: 25% ;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  .wadah{
+    margin-top: 30% ;
+  }
+}
+@media only screen and (max-width: 350px){
+  .wadah{
+    margin-top: 37%;
+  }
+}
+@media only screen and (max-width: 290px){
+  .wadah{
+    margin-top: 45%;
+  }
+  .wadah-edit{
+    height: 1500px;
+  }
+}
+

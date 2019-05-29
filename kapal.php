@@ -1,6 +1,8 @@
 <?php
+    // Menghubungkan ke database
     include "action/connection.php";
-    $query = mysqli_query($link,"SELECT * FROM data_kapal");
+    // Mengambil semua data yang ada di data_kapal
+    $query = mysqli_query($link,"SELECT * FROM data_kapal order by Nama_kapal asc");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Title -->
-        <title>Awak Kapal</title>
+        <title>Kapal</title>
 
         <!-- Favicon -->
         <link rel="icon" href="./img/core-img/favicon.png">
@@ -28,12 +30,12 @@
             <div class="loader"></div>
         </div>
         <!-- /Preloader -->
-
+        <!-- Memanggil nav.php dengan tujuan menampilkan navbar yang sudah di buat sebelumnya -->
         <?php include "nav.php";?>
 
         <!-- Our Speakings Area Start -->
-        <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image:img/bg-img/4.jpg; height:100vh;">
-            <div class="container">
+        <section class="our-blog-area bg-img section-padding-100-60" style="background-image: url(img/bg-img/18.jpg); height:100vh">
+            <div class="container back">
                 <div class="row">
                     <!-- Heading -->
                     <div class="col-12">
@@ -44,17 +46,19 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row isi">
                     
-                    <!-- Single Speaker Area -->
+                     <!-- Tabel untuk menampilkan semua data data kapal -->
                     <div class="col-12 col-lg-12">
-                        <table class="table table-stripped wow fadeInUp" data-wow-delay="300ms">
+                        <table class="table table-dark table-hover wow fadeInUp" data-wow-delay="300ms">
                             <thead>
                                 <tr>
-                                    <td>Nama kapal</td>
-                                    <td>Besar muatan</td>
-                                    <td>Nahkoda</td>
+                                    <td>No</td>
+                                    <td>Nama Kapal</td>
+                                    <td>Besar Muatan (GT)</td>
                                     <td>Kondisi</td>
+                                    <td>Status</td>
+                                    <td>Nahkoda</td>
                                     
                                 </tr>
 
@@ -72,11 +76,12 @@
 
                                     <td>".$data['Nama_kapal']."</td>
                                     <td>".$data['Besar_muatan']."</td>
-                                    <td>".$data['Nahkoda']."</td>
                                     <td>".$data['Kondisi']."</td>
+                                    <td>".$data['Status']."</td>
+                                    <td>".$data['Nahkoda']."</td>
                                 </tr>";
-                                 } 
-                                 } ?>
+                                    } 
+                                    } ?>
                             </tbody>
 
                         </table>
@@ -86,7 +91,7 @@
             </div>
         </section>
         <!-- Our Speakings Area End -->
-
+        <!-- Memanggil footer.php dengan tujuan menampilkan footer atau bagian bawah yang sudah di buat sebelumnya -->
         <?php include "footer.php"; ?>
 
         <!-- **** All JS Files ***** -->
