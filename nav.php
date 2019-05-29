@@ -39,7 +39,7 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="#">Pelaporan</a>
                                         <div class="dropdown-item sub-dropdown">
-                                            <a href="">Lapor Melaut</a>
+                                            <a href="Mendatapergi.php">Lapor Melaut</a>
                                             <a href="">Lapor Kembali</a>
                                             <a href="laporawakhilang.php">Lapor Orang Hilang</a>
                                         </div>
