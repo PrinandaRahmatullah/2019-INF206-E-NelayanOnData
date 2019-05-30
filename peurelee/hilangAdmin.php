@@ -18,7 +18,11 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
     <link rel="icon" href="./img/core-img/favicon.png">
 
     <!-- Stylesheet -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="../style.css">
+=======
+    <link rel="stylesheet" href="../../style.css">
+>>>>>>> SitiNurabidah
 
 </head>
 
@@ -83,7 +87,11 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
                                     <td>" . $data['Desa'] . "</td>
                                     <td>" . $data['Waktu_Hilang'] . "</td>
                                     <td>" . $data['Nama_Kapal'] . "</td> 
+<<<<<<< HEAD
                                     <td>" . '<button type="button" class="btn btn-success btn-rounded waves-effect mt-3">Edit</button> <button type="button" class="btn btn-danger btn-rounded waves-effect mt-3">Hapus</button>' . "</td>
+=======
+                                    <td>" . '<button type="button" class="btn btn-success btn-rounded waves-effect mt-2">Edit</button> <button type="button" class="btn btn-danger btn-rounded waves-effect mt-2">Hapus</button>' . "</td>
+>>>>>>> SitiNurabidah
                                     </tr>";
                                 }
                             } ?>
@@ -97,6 +105,7 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
 
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
+<<<<<<< HEAD
     <script src="../js/jquery.min.js"></script>
     <!-- Popper -->
     <script src="../js/popper.min.js"></script>
@@ -106,6 +115,17 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
     <script src="../js/confer.bundle.js"></script>
     <!-- Active -->
     <script src="../js/default-assets/active.js"></script>
+=======
+    <script src="../../js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="../../js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="../../js/confer.bundle.js"></script>
+    <!-- Active -->
+    <script src="../../js/default-assets/active.js"></script>
+>>>>>>> SitiNurabidah
 </body>
 
 </html>

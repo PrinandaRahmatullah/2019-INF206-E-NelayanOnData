@@ -40,7 +40,11 @@
                                     <a class="dropdown-item" href="#">Pelaporan</a>
                                     <div class="dropdown-item sub-dropdown">
                                         <a href="Mendatapergi.php">Lapor Melaut</a>
+<<<<<<< HEAD
                                         <a href="">Lapor Kembali</a>
+=======
+                                        <a href="mendatapulang.php">Lapor Kembali</a>
+>>>>>>> SitiNurabidah
                                         <a href="laporawakhilang.php">Lapor Orang Hilang</a>
                                     </div>
                                     <a class="dropdown-item" href="acset.php">Account Setting</a>
