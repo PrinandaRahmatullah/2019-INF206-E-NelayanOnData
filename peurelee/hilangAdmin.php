@@ -18,7 +18,7 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
     <link rel="icon" href="./img/core-img/favicon.png">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
 
 </head>
 
@@ -42,7 +42,7 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
             </div>
         </div>
 
-        <div class="row isi">
+        <div class="">
 
             <!-- Single Speaker Area -->
             <div class="col-12 col-lg-12">
@@ -82,10 +82,9 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
                                     <td>" . $data['Kecamatan'] . "</td>
                                     <td>" . $data['Desa'] . "</td>
                                     <td>" . $data['Waktu_Hilang'] . "</td>
-                                    <td>" . $data['Nama_Kapal'] . "</td>
-                                <td><a href=''>Edit</a></td>
-
-                                </tr>";
+                                    <td>" . $data['Nama_Kapal'] . "</td> 
+                                    <td>" . '<button type="button" class="btn btn-success btn-rounded waves-effect mt-2">Edit</button> <button type="button" class="btn btn-danger btn-rounded waves-effect mt-2">Hapus</button>' . "</td>
+                                    </tr>";
                                 }
                             } ?>
                     </tbody>
@@ -98,15 +97,15 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
 
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
-    <script src="../js/jquery.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
     <!-- Popper -->
-    <script src="../js/popper.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
     <!-- All Plugins -->
-    <script src="../js/confer.bundle.js"></script>
+    <script src="../../js/confer.bundle.js"></script>
     <!-- Active -->
-    <script src="../js/default-assets/active.js"></script>
+    <script src="../../js/default-assets/active.js"></script>
 </body>
 
 </html>

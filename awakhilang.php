@@ -84,7 +84,6 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang ORDER BY nik asc");
                                     <td>" . $data['Desa'] . "</td>
                                     <td>" . $data['Waktu_Hilang'] . "</td>
                                     <td>" . $data['Nama_Kapal'] . "</td>
-
                                 </tr>";
                                     }
                                 } ?>
