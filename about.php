@@ -28,13 +28,13 @@
 
     <?php include "nav.php" ?>
     
-    <section class="contact--us-area section-padding-100-0">
+    <section class="contact--us-area section-padding-100-0" style="background-image: url();">
         <div class="container">
             <div class="row">
                 <!-- Contact Us Thumb -->
                 <div class="col-12 col-lg-6">
                     <div class="contact-us-thumb mb-100">
-                    <img src="img/bg-img/5.jpg" alt="">
+                    <img src="img/bg-img/99.jpeg" alt="">
                     </div>
                 </div>
 
@@ -104,7 +104,7 @@
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>Prinanda Rahmatulla</h5>
+                            <h5>Prinanda Rahmatullah</h5>
                             <p>Informatic Student Of Syiah Kuala University</p>
                         </div>
                     </div>

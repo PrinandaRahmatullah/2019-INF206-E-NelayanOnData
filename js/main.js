@@ -19,3 +19,12 @@ $(document).ready(function(){
     }
 
 });
+(function ($) {
+    "use strict";
+    $('#password2, #password3').on('keyup', function () {
+        if ($('#password3').val() == $('#password2').val()) {
+            $('#message').html('Password Matching').css('color', 'green');
+        } else 
+            $('#message').html('Password Not Matching').css('color', 'red');
+    });
+}(jQuery));
