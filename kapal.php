@@ -54,10 +54,11 @@
                             <thead>
                                 <tr>
                                     <td>No</td>
-                                    <td>Nama kapal</td>
-                                    <td>Besar muatan</td>
-                                    <td>Nahkoda</td>
+                                    <td>Nama Kapal</td>
+                                    <td>Besar Muatan (GT)</td>
                                     <td>Kondisi</td>
+                                    <td>Status</td>
+                                    <td>Nahkoda</td>
                                     
                                 </tr>
 
@@ -75,8 +76,9 @@
 
                                     <td>".$data['Nama_kapal']."</td>
                                     <td>".$data['Besar_muatan']."</td>
-                                    <td>".$data['Nahkoda']."</td>
                                     <td>".$data['Kondisi']."</td>
+                                    <td>".$data['Status']."</td>
+                                    <td>".$data['Nahkoda']."</td>
                                 </tr>";
                                     } 
                                     } ?>
