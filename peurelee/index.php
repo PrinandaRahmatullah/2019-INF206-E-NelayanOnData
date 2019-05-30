@@ -18,7 +18,7 @@
 
     <title>Admin</title>
   </head>
-  <body>
+  <body style="background-image:url(../img/bg-img/1.jpg); background-repeat:no-repeat;background-attachment: fixed;background-size: cover;">
     <div id="overlie">
       <h4 style="color:white">Access to System</h4>
       <img src="../img/core-img/logo 2.png" alt="" width="85%">
