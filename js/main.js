@@ -27,4 +27,10 @@ $(document).ready(function(){
         } else 
             $('#message').html('Password Not Matching').css('color', 'red');
     });
+    $('#password4, #password5').on('keyup', function () {
+        if ($('#password5').val() == $('#password4').val()) {
+            $('#message').html('Password Matching').css('color', 'green');
+        } else 
+            $('#message').html('Password Not Matching').css('color', 'red');
+    });
 }(jQuery));
