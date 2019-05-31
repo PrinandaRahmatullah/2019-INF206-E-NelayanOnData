@@ -11,7 +11,8 @@ require_once "../../action/connection.php";
     if($query->num_rows>0){
         session_start();
         $_SESSION["adminNik"]=$nik;
-        header("Location: ../cekLaporan.php");
+        $_SESSION["adminPass"]=$pass;
+        header("Location: ../adminNahkoda.php");
 
     }
     else{
