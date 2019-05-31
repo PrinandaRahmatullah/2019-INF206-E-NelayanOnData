@@ -17,8 +17,8 @@
          Laporan
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Laporan Melaut</a>
-          <a class="dropdown-item" href="#">Laporan Kembali</a>
+          <a class="dropdown-item" href="laporanMelaut.php">Laporan Melaut</a>
+          <a class="dropdown-item" href="laporanKembali.php">Laporan Kembali</a>
         </div>
       </li>
       <li class="nav-item">
@@ -31,7 +31,7 @@
         <a class="nav-link" href="AdminKapal.php">Kapal</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Orang Hilang</a>
+        <a class="nav-link" href="hilangAdmin.php">Orang Hilang</a>
       </li>
             <div class="row">
                 
