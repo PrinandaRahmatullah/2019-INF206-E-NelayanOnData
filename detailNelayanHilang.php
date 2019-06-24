@@ -61,7 +61,6 @@
                     <div class="col-kiri col-kiri-edit col-md-4 col-xs-12" style="padding:25px; height:500px;">
                         <div>
                             <form action="" method="post" enctype="multipart/form-data">
-                                <?php if (isset($_SESSION["nik"]) && $_SESSION["password"]): ?>
                                 <div class="custom-file" style="margin-bottom:5px;" >
                                     <input type="file" class="custom-file-input" id="validatedCustomFile" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" name="myimage" onchange="preview_image(event);" required>
                                     <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
@@ -69,8 +68,6 @@
                                 </div>
                                 <!-- <input class="btn btn-primary" type="file" accept="image/*" name="myimage" onchange="preview_image(event)" style="margin-bottom:5px;" required> -->
                                 <button class="btn btn-success" type="submit" name="submit_hilang" style="margin-bottom:5px;">Save Photo</button>
-                                <?php else : ?>
-                                <?php endif; ?>
                             </form>
                             <?php
                             
@@ -169,7 +166,6 @@
                                 </div>
                             </div>                            
                             <div class="row">
-                                <?php if (isset($_SESSION["nik"]) && $_SESSION["password"]): ?>
                                 <div class="col-md-4 tombol">
                                     <a href="action/deleteNelayanHilang.php?NIK=<?php echo $awhil["NIK"] ?>" class="btn btn-danger">Hapus Laporan</a>
                                 </div>               
@@ -177,12 +173,6 @@
                                     <a href="awakhilang.php" class="btn btn-warning">Cancel</a>
                                     <button class=" btn btn-success" id="save">Simpan</button>    
                                 </div>
-                                <?php else:?>
-                                <div class="col-md-12 tombol">
-                                    <a href="awak.php" class="btn btn-warning"><< Kembali</a>
-
-                                </div>
-                                <?php endif;?>
                             </div>
                         </form>
                     </div>
