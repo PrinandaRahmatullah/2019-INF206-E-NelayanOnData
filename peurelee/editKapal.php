@@ -133,7 +133,7 @@
                             </div>
                             <div class="row">               
                                 <div class="col-md-12 tombol">
-                                    <a href="kapal.php" class="btn btn-primary">Cancel</a>
+                                    <a href="adminKapal.php" class="btn btn-primary">Cancel</a>
                                     <button type="submit" class="btn btn-success" id="save">Save</button>
                             </div>   
                         </form>

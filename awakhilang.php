@@ -44,12 +44,9 @@
                         </div>
                     </div>
                     <div class="col-lg-2">
-                        <?php if (isset($_SESSION["nik"]) && $_SESSION["password"]): ?>
                         <div id='tambah'><br>
                             <button class='btn btn-outline-primary' data-toggle='modal' data-target='#tambahHilangUser'><i class='fa fa-plus'> Tambah Nelayan Hilang</i></button>
                         </div>
-                        <?php else: ?>
-                        <?php endif; ?>
                     </div>
                 </div>
 
