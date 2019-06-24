@@ -1,5 +1,5 @@
 <!-- Footer Area Start -->
-<footer class="footer-area bg-img bg-overlay-2">
+    <footer class="footer-area bg-img bg-overlay-2">
         <!-- Copywrite Area -->
         <div class="container">
             <div class="copywrite-content">

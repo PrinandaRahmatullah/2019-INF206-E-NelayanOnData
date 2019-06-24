@@ -1,6 +1,5 @@
 <?php
 include "action/connection.php";
-    include "action/act_datapergi.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +24,9 @@ include "action/connection.php";
 <body>
         
         <!-- Memanggil nav.php dengan tujuan menampilkan navbar yang sudah di buat sebelumnya -->
-        <?php include "nav.php";?>
+        <?php include "nav.php";
+          $nik=$_SESSION["nik"];
+        ?>
 
  <!-- DATA KEBERANGKATAN -->
  <section class="our-blog-area bg-img section-padding-100-60" style="background-image: url(img/bg-img/18.jpg); height:100vh">
@@ -45,13 +46,12 @@ include "action/connection.php";
 
       <!-- Tabel untuk menampilkan semua data keberangkatan -->
       <table class="table table-striped table-hover">
-        <thead class="thead-light">
+        <thead class="thead-dark">
           <tr>
             <th scope="col">No</th>
             <th scope="col">Nahkoda</th>
             <th scope="col">Nama kapal</th>
             <th scope="col">Tanggal Berangkat</th>
-            <th scope="col">Daftar awak</th>
             
           </tr>
           <thead>
@@ -59,17 +59,16 @@ include "action/connection.php";
             <tbody>
               <tr>
                 <?php 
-                $query = mysqli_query($link,"SELECT * FROM datapergi");
+                $query = mysqli_query($link,"SELECT * FROM datapergi where NIK='$nik'");
                 if (mysqli_num_rows($query)>0){ 
                   $tambah = 0;
                   while ($data = mysqli_fetch_array($query)) { $tambah++;
                     echo"
 
                     <td>".$tambah."</td>
-                    <td>".$data['NIK']."</td>
+                    <td>".$data['nik']."</td>
                     <td>".$data['Nama_kapal']."</td>
                     <td>".$data['Tanggal']."</td>
-                    <td>".$data['Anggota']."</td>
                     
                     </tr>" ;
                   } 

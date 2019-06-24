@@ -21,15 +21,17 @@
 
 <body>
     <!-- Preloader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="loader"></div>
-    </div>
+    </div> -->
     <!-- /Preloader -->
 
     <?php include "nav.php" ?>
     
-    <section class="contact--us-area section-padding-100-0" style="background-image: url();">
+    <section class="contact--us-area section-padding-100-0" style="background-image: url(); padding-top:130px">
         <div class="container">
+            <h2 style="text-align:center;">TENTANG KAMI</h2>
+            <br>
             <div class="row">
                 <!-- Contact Us Thumb -->
                 <div class="col-12 col-lg-6">

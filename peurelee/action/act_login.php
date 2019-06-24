@@ -12,7 +12,7 @@ require_once "../../action/connection.php";
         session_start();
         $_SESSION["adminNik"]=$nik;
         $_SESSION["adminPass"]=$pass;
-        header("Location: ../adminNahkoda.php");
+        header("Location: ../laporanMelaut.php");
 
     }
     else{

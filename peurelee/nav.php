@@ -17,27 +17,27 @@
          Laporan
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Laporan Melaut</a>
-          <a class="dropdown-item" href="#">Laporan Kembali</a>
+          <a class="dropdown-item" href="laporanMelaut.php">Laporan Melaut</a>
+          <a class="dropdown-item" href="laporanKembali.php">Laporan Kembali</a>
         </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="adminNahkoda.php"><span>Nahkoda</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Awak</a>
+        <a class="nav-link" href="editAwak.php">Awak</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="AdminKapal.php">Kapal</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Orang Hilang</a>
+        <a class="nav-link" href="hilangAdmin.php">Orang Hilang</a>
       </li>
             <div class="row">
                 
                 <div class="col-lg-1">
                 <?php if (isset($_SESSION["adminNik"])): ?>
-                <a href="action/logout.php" class="btn btn-outline-danger logout"><i class="fa fa-power-off"></i> Logout</a>
+                <a href="action/logout.php" title="Log Out" class="btn btn-outline-danger logout"><i class="fa fa-power-off"></i> Logout</a>
                 <?php else: ?>
                 <!-- Get Tickets Button -->
                 

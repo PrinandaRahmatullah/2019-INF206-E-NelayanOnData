@@ -51,7 +51,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   position: relative;
-  z-index: auto; }
+  z-index: auto;
+}
 
 h1,
 h2,
@@ -767,7 +768,7 @@ input:required {
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.9); }
   .header-area.sticky {
     background-color: #000000;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
@@ -996,8 +997,8 @@ input:required {
 
 /* :: Footer Area CSS */
 .footer-area {
-  position: fixed;
-  bottom: 0px;
+  position: absolute;
+  /* bottom: 0px; */
   width: 100%;
   text-align: center;
   z-index: 1;
@@ -1107,7 +1108,7 @@ input:required {
       opacity: 0.8; }
 
 .copywrite-content {
-  border-top: 1px solid #414269;
+  /* border-top: 1px solid #414269; */
   padding: 15px 0;
  }
   @media only screen and (max-width: 767px) {
@@ -2763,7 +2764,7 @@ button#but{
 }
 
 div.pembatas{
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 350px;
   height: 330px;
   padding-top: 2%;
@@ -2810,13 +2811,17 @@ a.akun:focus{
 
 .back{
   margin-top: 15px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #f7f7f7 !important;
   border-radius: 25px;
 }
 
 .isi{
-  overflow: auto;
-  height: 375px;
+  /* overflow: auto; */
+  object-fit: contain;
+}
+
+.isi input{
+  margin-bottom: 10px;
 }
 table{
   border-radius: 20px;
@@ -2854,7 +2859,7 @@ table tbody{
 .col-kiri{
   margin-right: 10px; 
   margin-bottom: 10px;
-  padding: 40px;
+  padding: 25px;
   box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.2);
   box-sizing: border-box;
 }
@@ -2897,7 +2902,6 @@ table tbody{
 #formulir input{
   border: none;
   border-bottom: 1px solid #000000;
-  border-radius: 0px;
   visibility: visible;
   background-color: transparent;
 
@@ -2916,6 +2920,24 @@ table tbody{
 .sub-dropdown a {
   margin-bottom: 5px;
   color: #000000;
+}
+
+#footerIndex{
+  position: absolute;
+  bottom: 0px;
+  margin-left: 5%;
+  width: 600px;
+  color: white !important;
+  border-radius: 100px 100px 0 0;
+}
+.card-orang{
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+}
+
+.modal input{
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 1250px){

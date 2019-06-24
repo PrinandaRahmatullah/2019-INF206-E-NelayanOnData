@@ -24,9 +24,9 @@
 
 <body>
        <!-- Preloader -->
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div class="loader"></div>
-        </div>
+        </div> -->
         <!-- /Preloader -->
 
         <!-- Memanggil nav.php-->

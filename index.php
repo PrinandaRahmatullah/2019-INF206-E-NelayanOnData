@@ -23,11 +23,11 @@
 
 </head>
 
-<body>
+<body >
     <!-- Preloader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="loader"></div>
-    </div>
+    </div> -->
     <!-- /Preloader -->
 
     <?php include "nav.php";?>
@@ -46,7 +46,7 @@
                                 <h2 data-animation="fadeInUp" data-delay="300ms">Welcome to <br>Nelayan On DATA</h2>
                                 <h6 data-animation="fadeInUp" data-delay="500ms">Menyediakan berbagai informasi<br> mengenai nelayan dan kapal</h6>
                                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="#" class="btn confer-btn">Lapor Now<i class="zmdi zmdi-long-arrow-right"></i></a>
+                                    <a href="MendataPergi.php" class="btn confer-btn">Lapor Now<i class="zmdi zmdi-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
                                 <?php if (isset($_SESSION["nik"]) && $_SESSION["password"]): ?>
-                                <a href="#" class="btn confer-btn">Lapor Now<i class="zmdi zmdi-long-arrow-right"></i></a>                                
+                                <a href="MendataPergi.php" class="btn confer-btn">Lapor Now<i class="zmdi zmdi-long-arrow-right"></i></a>                                
                                 <?php else: ?>
                                 <!-- Get Tickets Button -->
                                 <a href="login.php" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Login</i></a>
@@ -83,10 +83,21 @@
             </div>
         </div>
     </section>
-    <!-- Welcome Area End -->
-
-    <?php include "footer.php"; ?>
-
+    <footer class="footer-area bg-img bg-overlay-2" id="footerIndex">
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="copywrite-content">
+                <div class="row">
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-md-12">
+                        <div class="copywrite-text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by Nelayan On DATA Team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
