@@ -24,7 +24,7 @@
         <script type='text/javascript'>
         function preview_image(event) 
         {
-            console.log('files: ',event.files);
+            // console.log('files: ',event.files);
                 
             var reader = new FileReader();
             reader.onload = function()
@@ -39,9 +39,9 @@
 
 <body>
        <!-- Preloader -->
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div class="loader"></div>
-        </div>
+        </div> -->
         <!-- /Preloader -->
 
         <!-- Memanggil nav.php-->

@@ -1,9 +1,9 @@
 <?php
   require_once "../../action/connection.php";
 
-    $kode = $_GET["nik"];
+    $kode = $_GET["NIK"];
 
-    $delete = $link->query("delete from datapergi where nik=$kode");
+    $delete = $link->query("delete from datapergi where NIK=$kode");
 
 
     if ($delete) {

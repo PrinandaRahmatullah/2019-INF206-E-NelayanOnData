@@ -54,7 +54,7 @@
                             echo"
                             <tr>
                                 <td>".++$no."</td>
-                                <td><div class='card'><img src='../img/ac-img/".$data['gambar']."'></div></td>
+                                <td><div class='card card-orang'><img src='../img/ac-img/".$data['gambar']."'></div></td>
                                 <td>".$data['nik']."</td>
                                 <td>".$data['nama']."</td>
                                 <td>".$data['No_HP']."</td>
@@ -201,11 +201,11 @@
                             </div>
                             <div class="col-md-5">
                                 <label for="tempat_lahir">Tempat Lahir</label>
-                                <input type="text" class="form-control" name="tempat_lahir" id="tempat_lahir" required>
+                                <input type="text" class="form-control" name="tempat_lahir" id="tempat_lahir">
                             </div>
                             <div class="col-md-5">
                                 <label for="tgl lahir">Tanggal Lahir</label>
-                                <input type="date" class="form-control" name="tanggal_lahir" id="tanggal_lahir" required>
+                                <input type="date" class="form-control" name="tanggal_lahir" id="tanggal_lahir">
                             </div>
                             <div class="col-md-6">
                                 <label for="no_hp">Nomor HP</label>
@@ -213,7 +213,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="no_hp_d">Nomor HP Darurat</label>
-                                <input type="text" class="form-control" name="no_hp_d" id="no_hp_d" required>
+                                <input type="text" class="form-control" name="no_hp_d" id="no_hp_d">
                             </div>
                             <div class="col-md-4">
                                 <label for="kota_asal">Kota Asal</label>
@@ -221,11 +221,11 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="Kecamatan">Kecamatan</label>
-                                <input type="text" class="form-control" name="kecamatan" id="kecamatan" required>
+                                <input type="text" class="form-control" name="kecamatan" id="kecamatan">
                             </div>
                             <div class="col-md-4">
                                 <label for="desa">Desa</label>
-                                <input type="text" class="form-control" name="desa" id="desa" required>
+                                <input type="text" class="form-control" name="desa" id="desa">
                             </div>
                             <div class="col-md-12">
                                 <label for="alamat">Alamat</label>

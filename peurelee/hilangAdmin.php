@@ -17,25 +17,20 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/favicon.png">
 
-    <!-- Stylesheet -->
-<<<<<<< HEAD
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Own CSS -->
     <link rel="stylesheet" href="../style.css">
-=======
-    <link rel="stylesheet" href="../../style.css">
->>>>>>> SitiNurabidah
+    <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
-    <!-- /Preloader -->
-
+    <?php include "nav.php" ?>
     <!-- Our Speakings Area Start -->
 
-    <div class="container border shadow-lg p-3 mb-5 bg-gray rounded container back">
+    <div class="container border shadow-lg p-3 mb-5 bg-gray rounded container back" style="margin-top:100px;">
         <div class="row">
             <!-- Heading -->
             <div class="col-12">
@@ -59,8 +54,7 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
                             <td>Tempat Lahir</td>
                             <td>Tanggal Lahir</td>
                             <td>Kota</td>
-                            <td>Kecamatan</td>
-                            <td>Desa</td>
+                            <td>Alamat</td>
                             <td>Waktu Hilang</td>
                             <td>Kapal</td>
                             <td>Aksi</td>
@@ -78,21 +72,17 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
                                     echo "
                                     <td>" . $tambah . "</td>
 
-                                    <td>" . $data['NIK'] . "</td>
-                                    <td>" . $data['Nama'] . "</td>
-                                    <td>" . $data['Tempat_Lahir'] . "</td>
-                                    <td>" . $data['Tanggal_Lahir'] . "</td>
-                                    <td>" . $data['Kota'] . "</td>
-                                    <td>" . $data['Kecamatan'] . "</td>
-                                    <td>" . $data['Desa'] . "</td>
-                                    <td>" . $data['Waktu_Hilang'] . "</td>
-                                    <td>" . $data['Nama_Kapal'] . "</td> 
-<<<<<<< HEAD
-                                    <td>" . '<button type="button" class="btn btn-success btn-rounded waves-effect mt-3">Edit</button> <button type="button" class="btn btn-danger btn-rounded waves-effect mt-3">Hapus</button>' . "</td>
-=======
-                                    <td>" . '<button type="button" class="btn btn-success btn-rounded waves-effect mt-2">Edit</button> <button type="button" class="btn btn-danger btn-rounded waves-effect mt-2">Hapus</button>' . "</td>
->>>>>>> SitiNurabidah
-                                    </tr>";
+                                    <td>".$data['NIK']."</td>
+                                    <td>".$data['Nama']."</td>
+                                    <td>".$data['Tempat_Lahir']."</td>
+                                    <td>".$data['Tanggal_Lahir']."</td>
+                                    <td>".$data['Kota']."</td>
+                                    <td>".$data['Alamat']."</td>
+                                    <td>".$data['Waktu_Hilang']."</td>
+                                    <td>".$data['Nama_Kapal']."</td> 
+                                    <td><a class='btn btn-warning btn-rounded waves-effect mt-3' href='editDatahilang.php?NIK=".$data["NIK"]."'>Edit</a><a class='btn btn-danger' href='action/deleteHilang.php?NIK=".$data["NIK"]."'>Hapus</a></td>
+
+                        </tr>";
                                 }
                             } ?>
                     </tbody>
@@ -105,27 +95,11 @@ $query = mysqli_query($link, "SELECT * FROM awakhilang");
 
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
-<<<<<<< HEAD
     <script src="../js/jquery.min.js"></script>
-    <!-- Popper -->
     <script src="../js/popper.min.js"></script>
-    <!-- Bootstrap -->
     <script src="../js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="../js/confer.bundle.js"></script>
-    <!-- Active -->
-    <script src="../js/default-assets/active.js"></script>
-=======
-    <script src="../../js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="../../js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../../js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="../../js/confer.bundle.js"></script>
-    <!-- Active -->
-    <script src="../../js/default-assets/active.js"></script>
->>>>>>> SitiNurabidah
+    <script src="../js/main.js"></script>
+
 </body>
 
 </html>

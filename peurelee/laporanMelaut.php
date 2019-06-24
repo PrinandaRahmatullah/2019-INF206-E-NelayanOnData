@@ -33,12 +33,11 @@
                 <table class="table table-striped table-hover tabelku">
                 <thead class="thead-dark">
               <tr>
-                <th scope="col">No</th>
-                <th scope="col">Nahkoda</th>
-                <th scope="col">Nama kapal</th>
-                <th scope="col">Tanggal Berangkat</th>
-                <th scope="col">Daftar awak</th>
-                <th scope="col">Tindakan</th>
+                <th>No</th>
+                <th>NIK</th>
+                <th>Nama Kapal</th>
+                <th>Tanggal Berangkat</th>
+                <th>Detail</th>
               </tr>
             <thead>
 
@@ -52,12 +51,10 @@
                           echo"
                           <tr>
                           <td>".$tambah."</td>
-                          <td>".$data['NIK']."</td>
+                          <td>".$data['nik']."</td>
                           <td>".$data['Nama_kapal']."</td>
                           <td>".$data['Tanggal']."</td>
-                          <td>".$data['Anggota']."</td>
-                          <td>".'<button id="terima" type="button" class="btn btn-outline-success btn-rounded waves-effect">Verifikasi</button> 
-                          <button id="tolak" type="button" class="btn btn-outline-danger btn-rounded waves-effect">Tolak</button>'."</td>
+                          <td><a style='title='Detail' href='detailMelaut.php?NIK=".$data["nik"]."'><i class='fa fa-question'></i></a></td>
                           </tr>
                           " ;
                           } 

@@ -24,16 +24,16 @@
 
 <body>
     <!-- Preloader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="loader"></div>
-    </div>
+    </div> -->
     <!-- /Preloader -->
 
     <?php include "nav.php";?>
 
 
     <!-- Our Blog Area Start -->
-    <section class="latbelk our-blog-area bg-img  section-padding-100-60" style="background-image: url(img/bg-img/17.jpg); height:100vh">
+    <section class="latbelk our-blog-area bg-img  section-padding-100-60" style="background-image: url(img/bg-img/15.jpg); height:100vh">
         <div class="container">
             <center>
             <div class="pembatas">

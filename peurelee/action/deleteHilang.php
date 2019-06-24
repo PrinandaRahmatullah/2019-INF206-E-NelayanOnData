@@ -1,9 +1,8 @@
 <?php
 require_once "../../action/connection.php";
 
-$kode = $_GET["nik"];
-
-$delete = $link->query("delete from nahkoda where nik=$kode");
+$kode = $_GET["NIK"];
+$delete = $link->query("delete from awakhilang where NIK=$kode");
 
 
 if ($delete) {
@@ -14,5 +13,5 @@ if ($delete) {
 ?>
 
 <script>
-    location.replace("../../adminNahkoda.php");
+    location.replace("../hilangAdmin.php");
 </script>

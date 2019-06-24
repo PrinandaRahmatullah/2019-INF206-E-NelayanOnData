@@ -1,6 +1,5 @@
 <?php
 include "action/connection.php";
-include "action/act_datapulang.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,10 +47,9 @@ include "action/act_datapulang.php";
               <thead class="thead-light">
                 <tr>
                   <th scope="col">No</th>
-                  <th scope="col">Nahkoda</th>
+                  <th scope="col">NIK Nahkoda</th>
                   <th scope="col">Nama kapal</th>
                   <th scope="col">Tanggal Berangkat</th>
-                  <th scope="col">Daftar awak</th>
                   
                 </tr>
                 <thead>
@@ -59,17 +57,16 @@ include "action/act_datapulang.php";
                   <tbody>
                     <tr>
                       <?php 
-                      $query = mysqli_query($link,"SELECT * FROM datapulang");
+                      $query = mysqli_query($link,"SELECT * FROM datapergi");
                       if (mysqli_num_rows($query)>0){ 
                         $tambah = 0;
                         while ($data = mysqli_fetch_array($query)) { $tambah++;
                           echo"
 
                           <td>".$tambah."</td>
-                          <td>".$data['NIK']."</td>
+                          <td>".$data['nik']."</td>
                           <td>".$data['Nama_kapal']."</td>
                           <td>".$data['Tanggal']."</td>
-                          <td>".$data['Anggota']."</td>
                           
                           </tr>" ;
                         } 
